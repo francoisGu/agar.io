@@ -20,8 +20,8 @@
 		052CA1A51BCBA36900F24DCF /* Viruse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1A41BCBA36900F24DCF /* Viruse.swift */; settings = {ASSET_TAGS = (); }; };
 		052CA1A71BCBA3CD00F24DCF /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1A61BCBA3CD00F24DCF /* Mass.swift */; settings = {ASSET_TAGS = (); }; };
 		052CA1A91BCBA88F00F24DCF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1A81BCBA88F00F24DCF /* Player.swift */; settings = {ASSET_TAGS = (); }; };
-		052CA1AB1BCBA89C00F24DCF /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1AA1BCBA89C00F24DCF /* FoodController.swift */; settings = {ASSET_TAGS = (); }; };
-		052CA1AD1BCBA8B300F24DCF /* ViruseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1AC1BCBA8B300F24DCF /* ViruseController.swift */; settings = {ASSET_TAGS = (); }; };
+		052CA1AB1BCBA89C00F24DCF /* ModController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CA1AA1BCBA89C00F24DCF /* ModController.swift */; settings = {ASSET_TAGS = (); }; };
+		05EAC13E1BCC0B470011972C /* HUDScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EAC13D1BCC0B470011972C /* HUDScene.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		052CA1A41BCBA36900F24DCF /* Viruse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viruse.swift; sourceTree = "<group>"; };
 		052CA1A61BCBA3CD00F24DCF /* Mass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
 		052CA1A81BCBA88F00F24DCF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		052CA1AA1BCBA89C00F24DCF /* FoodController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
-		052CA1AC1BCBA8B300F24DCF /* ViruseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViruseController.swift; sourceTree = "<group>"; };
+		052CA1AA1BCBA89C00F24DCF /* ModController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModController.swift; sourceTree = "<group>"; };
+		05EAC13D1BCC0B470011972C /* HUDScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,7 @@
 				052CA1861BCB9F0600F24DCF /* AppDelegate.swift */,
 				052CA1881BCB9F0600F24DCF /* GameScene.sks */,
 				052CA18A1BCB9F0600F24DCF /* GameScene.swift */,
+				05EAC13D1BCC0B470011972C /* HUDScene.swift */,
 				052CA18C1BCB9F0600F24DCF /* GameViewController.swift */,
 				052CA18E1BCB9F0600F24DCF /* Main.storyboard */,
 				052CA1911BCB9F0600F24DCF /* Assets.xcassets */,
@@ -104,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				052CA1A81BCBA88F00F24DCF /* Player.swift */,
-				052CA1AA1BCBA89C00F24DCF /* FoodController.swift */,
-				052CA1AC1BCBA8B300F24DCF /* ViruseController.swift */,
+				052CA1AA1BCBA89C00F24DCF /* ModController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -184,12 +184,12 @@
 				052CA19F1BCB9F5F00F24DCF /* Disk.swift in Sources */,
 				052CA1A71BCBA3CD00F24DCF /* Mass.swift in Sources */,
 				052CA18B1BCB9F0600F24DCF /* GameScene.swift in Sources */,
-				052CA1AD1BCBA8B300F24DCF /* ViruseController.swift in Sources */,
+				05EAC13E1BCC0B470011972C /* HUDScene.swift in Sources */,
 				052CA1A11BCBA31600F24DCF /* Cell.swift in Sources */,
 				052CA18D1BCB9F0600F24DCF /* GameViewController.swift in Sources */,
 				052CA1A51BCBA36900F24DCF /* Viruse.swift in Sources */,
 				052CA1871BCB9F0600F24DCF /* AppDelegate.swift in Sources */,
-				052CA1AB1BCBA89C00F24DCF /* FoodController.swift in Sources */,
+				052CA1AB1BCBA89C00F24DCF /* ModController.swift in Sources */,
 				052CA1A91BCBA88F00F24DCF /* Player.swift in Sources */,
 				052CA1A31BCBA32700F24DCF /* Food.swift in Sources */,
 			);
@@ -339,6 +339,7 @@
 				052CA19B1BCB9F0600F24DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

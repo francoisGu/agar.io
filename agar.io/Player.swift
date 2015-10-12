@@ -14,12 +14,12 @@ class Player{
     var cellsList : [Cell]
     var foodEaten : Int
     var highestMass : CGFloat
-    var startTime : NSData
+    var startTime : Double
     var cellsEaten : Int
     var lastTouch: CGPoint?{
         didSet{
             for cell in cellsList{
-                cell.setSpeedDirection(lastTouch!)
+                cell.move(lastTouch!)
             }
         }
     }
@@ -31,7 +31,7 @@ class Player{
         self.foodEaten = 0
         self.highestMass = 0
         self.cellsEaten = 0
-        self.startTime = NSData()
+        self.startTime = NSDate().timeIntervalSince1970
         self.centralCell = Cell(userName: playerName, location: CGPointZero)
         cellsList.append(centralCell)
     }
@@ -49,7 +49,7 @@ class Player{
     //User do action to split cells
     //Each cell exist could split to 2 same size cells
     func splitCells()->[Cell]{
-        var splitCells:[Cell] = [Cell]()
+        let splitCells:[Cell] = [Cell]()
         if(cellsList.count >= 2){
             return splitCells
         }

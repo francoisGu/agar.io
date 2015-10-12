@@ -20,9 +20,5 @@ class Viruse: Disk {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    //Viruse could eat to split
-    func split() {
-        
-    }
+
 }
